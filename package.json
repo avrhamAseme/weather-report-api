@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest",
+    "ci": "npm ci && jest --forceExit"
   },
   "devDependencies": {
     "jest": "^29.7.0",
