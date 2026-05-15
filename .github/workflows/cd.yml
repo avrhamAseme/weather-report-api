@@ -11,6 +11,10 @@ env:
   AWS_REGION: eu-north-1
   ECR_REPOSITORY: docker-images/avraham-repo
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   docker-build-push:
     runs-on: ubuntu-latest
